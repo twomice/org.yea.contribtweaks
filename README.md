@@ -1,19 +1,10 @@
-# org.yea.contribtweaks
+# YEA Contribution Tweaks
 
-![Screenshot](/images/screenshot.png)
-
-(*FIXME: In one or two paragraphs, describe what the extension does and why one would download it. *)
-
-The extension is licensed under [GPL-3.0](LICENSE.txt).
-
-## Requirements
-
-* PHP v5.4+
-* CiviCRM (*FIXME: Version number*)
+Custom modifications to native contribution functionality, for YEA.
 
 ## Installation (Web UI)
 
-This extension has not yet been published for installation via the web UI.
+This extension has not yet been published for installation via the web UI. Probably never will be.
 
 ## Installation (CLI, Zip)
 
@@ -35,10 +26,8 @@ git clone https://github.com/FIXME/org.yea.contribtweaks.git
 cv en contribtweaks
 ```
 
-## Usage
+## Functionality
 
-(* FIXME: Where would a new user navigate to get started? What changes would they see? *)
+* Requires a value for contribution Source field.
+* Requires a value for contribution Status field, but adds and defaults to a blank value for new contributions.
 
-## Known Issues
-
-(* FIXME *)
