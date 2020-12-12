@@ -12,11 +12,11 @@ function contribtweaks_civicrm_buildForm($formName, &$form) {
   if ($formName == 'CRM_Contribute_Form_Contribution') {
     if ($form->elementExists('source')) {
       // Make Source a required field if it exists.
-      $form->addRule('source', ts('This field is required.'), 'required');
+      $form->addRule('source', E::ts('This field is required.'), 'required');
     }
     if ($form->elementExists('contribution_status_id')) {
       // Make Source a required field if it exists.
-      $form->addRule('contribution_status_id', ts('This field is required.'), 'required');
+      $form->addRule('contribution_status_id', E::ts('This field is required.'), 'required');
 
       if (empty($form->_id)) {
         // If 'status' field exists, make it required, and default it to blank;
