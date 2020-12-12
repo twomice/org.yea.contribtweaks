@@ -23,7 +23,7 @@ function contribtweaks_civicrm_buildForm($formName, &$form) {
         // Intention here is to force the user to think about their selection.
         $form->getElement('contribution_status_id')->addOption('', '');
         $form->setDefaults(array(
-          'contribution_status_id' => ''
+          'contribution_status_id' => '',
         ));
       }
     }
@@ -168,23 +168,25 @@ function contribtweaks_civicrm_entityTypes(&$entityTypes) {
  *
  * @link http://wiki.civicrm.org/confluence/display/CRMDOC/hook_civicrm_preProcess
  *
-function contribtweaks_civicrm_preProcess($formName, &$form) {
-
-} // */
+ *function contribtweaks_civicrm_preProcess($formName, &$form) {
+ *
+ *} //
+ */
 
 /**
  * Implements hook_civicrm_navigationMenu().
  *
  * @link http://wiki.civicrm.org/confluence/display/CRMDOC/hook_civicrm_navigationMenu
  *
-function contribtweaks_civicrm_navigationMenu(&$menu) {
-  _contribtweaks_civix_insert_navigation_menu($menu, 'Mailings', array(
-    'label' => E::ts('New subliminal message'),
-    'name' => 'mailing_subliminal_message',
-    'url' => 'civicrm/mailing/subliminal',
-    'permission' => 'access CiviMail',
-    'operator' => 'OR',
-    'separator' => 0,
-  ));
-  _contribtweaks_civix_navigationMenu($menu);
-} // */
+ *function contribtweaks_civicrm_navigationMenu(&$menu) {
+ *  _contribtweaks_civix_insert_navigation_menu($menu, 'Mailings', array(
+ *    'label' => E::ts('New subliminal message'),
+ *    'name' => 'mailing_subliminal_message',
+ *    'url' => 'civicrm/mailing/subliminal',
+ *    'permission' => 'access CiviMail',
+ *    'operator' => 'OR',
+ *    'separator' => 0,
+ *  ));
+ *  _contribtweaks_civix_navigationMenu($menu);
+ *} //
+ */
